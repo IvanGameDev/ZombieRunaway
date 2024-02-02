@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
 html, body {
     height: 100%;
     overflow: hidden;
@@ -12,5 +14,44 @@ body {
 
 .row {
     text-align: center;
+}
+
+#video-player {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 720px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.tablet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 720px;
+    height: 460px;
+    overflow: hidden;
+    filter: drop-shadow(0 2px 10px rgba(0,0,0,0.2));
+}
+
+video {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 58px;
+    font-family: 'Protest Revolution', sans-serif;
+}
+
+p {
+    font-family: 'Protest Revolution', sans-serif;
 }
 
